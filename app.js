@@ -16,6 +16,7 @@ app.post('/', function(req, res) {
     const url = 'https://api.openweathermap.org/data/2.5/weather?q='+location+'&appid='+ apiKey +'';
     https.get(url, function(response) {
         console.log(location);
+        console.log(apiKey);
     })
 
 
@@ -25,5 +26,3 @@ app.post('/', function(req, res) {
 app.listen(port, function() {
     console.log('Serving on port ' + port + '.');
 })
-
-
