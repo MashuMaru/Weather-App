@@ -12,10 +12,6 @@ app.post('/', function(req, res) {
 
 app.listen(port, function() {
     console.log('Serving on port ' + port + '.');
-    
-    console.log('Does this work, I wonder...');
-    console.log('Does this work, I wonder...');
-    console.log('Does this work, I wonder...');
 })
 
 
