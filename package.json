@@ -1,0 +1,22 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "a simple weather ap",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MashuMaru/Weather-App.git"
+  },
+  "author": "MattBerenyi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MashuMaru/Weather-App/issues"
+  },
+  "homepage": "https://github.com/MashuMaru/Weather-App#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
