@@ -27,7 +27,7 @@ app.post('/', function(req, res) {
             const description = weatherData.weather[0].description;
             const icon = weatherData.weather[0].icon;
             const imgURL = "http://openweathermap.org/img/wn/" + icon + "@2x.png";
-            res.write("<h1>The weather is " + description + ".</h1>");
+            res.write("<h1>Weather description:" + description + ".</h1>");
             res.write("<h1>The temperature in " + location + " is " + focusTemp + " degress Celcius.</h1>");
             res.write("<img src=" +imgURL+">");
 
@@ -44,18 +44,6 @@ app.post('/', function(req, res) {
             })
         })
     })
-
-    // https.get(urlTime, function(response) {
-
-    //     response.on('data', function(data) {
-    //         const timeData = JSON.parse(data);
-    //         const time = timeData.timezone;
-    //         const date = timeData.datetime;
-    //         res.write("<p>The time zone is "+time+".</p>");
-    //         res.write("<p>The date and time is "+date+".</p>");
-    //         res.send();
-    //     })
-    // })
 })
 
 app.listen(port, function() {
