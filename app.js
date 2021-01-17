@@ -20,7 +20,14 @@ app.post('/', function(req, res) {
     https.get(url, function(response) {
         console.log(response.statusCode);
 
+
         response.on('data', function(data) {
+            // CURRENT TIME BELOW
+            var date = new Date();
+            var hour = date.getHours();
+            var minute = date.getMinutes();
+            res.write("<p>Request at time: "+hour+": "+minute+"</p>");
+            // CURRENT TIME ABOVE
             const weatherData = JSON.parse(data);
             const temp = weatherData.main.temp;
             const focusTemp = Math.ceil(temp);
