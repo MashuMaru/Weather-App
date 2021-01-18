@@ -1,32 +1,5 @@
 <!DOCTYPE html>
 
-<!-- <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Weather and Time/Date App</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <link href="/styles.css" rel="stylesheet">
-    <body>
-        <div class="form">
-        <form action="/" method="post">
-            <div class="title-div">
-                <h1 class="title"></h1>
-            </div>
-            <label for="cityInput">Continent and city name:</label>
-            <input id="continentName" type="text" name="continentName" placeholder="Write continent">
-            <input id="cityName" type="text" name="cityName" placeholder="Write city">
-            <button type="submit">Check time and weather</button>
-        </form>
-    </div>
-        <script src="" async defer></script>
-    </body>
-</html> -->
-
-<!-- /* new code */ -->
-
 <!doctype html>
 <html lang="en">
   <head>
@@ -44,6 +17,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2c3531125f.js" crossorigin="anonymous"></script>
 
     <!-- Custom styles for this template -->
     <link href="/styles.css" rel="stylesheet">
@@ -51,12 +25,15 @@
 
   <body class="text-center">
     <form class="form-signin" action="/" method="post">
+        <div class="form-section">
+    <i class="fas fa-cloud-sun fa-10x"></i>
       <h1 class="h3 mb-3 font-weight-normal">Check the weather and time below!</h1>
       <input type="text" id="continentName" name="continentName" class="form-control top" placeholder="Enter continent" required autofocus>
       <input type="text" id="cityName" name="cityName" class="form-control bottom" placeholder="Enter city" required>
       <div class="checkbox mb-3">
       </div>
       <button class="btn btn-lg btn-primary btn-block" type="submit">Check Weather and Time</button>
+    </div>
       <p class="mt-5 mb-3 text-muted">&copy; 2021 Mashumaru</p>
     </form>
   </body>
