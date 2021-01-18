@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<!-- <html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +8,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
+    <link href="/styles.css" rel="stylesheet">
     <body>
         <div class="form">
         <form action="/" method="post">
+            <div class="title-div">
+                <h1 class="title"></h1>
+            </div>
             <label for="cityInput">Continent and city name:</label>
             <input id="continentName" type="text" name="continentName" placeholder="Write continent">
             <input id="cityName" type="text" name="cityName" placeholder="Write city">
@@ -19,4 +23,41 @@
     </div>
         <script src="" async defer></script>
     </body>
+</html> -->
+
+<!-- /* new code */ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Weather and Time API Site</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/sign-in/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/styles.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin" action="/" method="post">
+      <h1 class="h3 mb-3 font-weight-normal">Check the weather and time below!</h1>
+      <input type="text" id="continentName" name="continentName" class="form-control top" placeholder="Enter continent" required autofocus>
+      <input type="text" id="cityName" name="cityName" class="form-control bottom" placeholder="Enter city" required>
+      <div class="checkbox mb-3">
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Check Weather and Time</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2021 Mashumaru</p>
+    </form>
+  </body>
 </html>

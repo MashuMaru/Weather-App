@@ -3,6 +3,7 @@ const app = express();
 const port = 3000;
 const https = require('https');const bodyParser = require("body-parser");
 
+app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', function(req, res) {
@@ -27,7 +28,7 @@ app.post('/', function(req, res) {
             var hour = date.getHours();
             var minute = date.getMinutes();
             res.write("<p>Request at time: "+hour+": "+minute+"</p>");
-            
+
             const weatherData = JSON.parse(data);
             const temp = weatherData.main.temp;
             const focusTemp = Math.ceil(temp);
