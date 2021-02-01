@@ -27,6 +27,14 @@ app.post('/', function(req, res) {
             var date = new Date();
             var hour = date.getHours();
             var minute = date.getMinutes();
+
+            if(minute < 10) {
+                var minute = "0"+minute;
+            }
+            if (hour < 10) {
+                var hour = "0"+hour;
+            }
+            
             res.write("<p>Request at time: "+hour+": "+minute+"</p>");
 
             const weatherData = JSON.parse(data);
